@@ -16,7 +16,7 @@ def Diminuir(valor, porcentagem = 10):
     :param porcentagem: Porcentagem a ser calculada e subtraí ao valor total
     :return: Retorna o valor inicial - o valor percentual calculado
     """
-    total = valor + (valor / 100 * porcentagem)
+    total = valor - (valor / 100 * porcentagem)
     return total
 
 

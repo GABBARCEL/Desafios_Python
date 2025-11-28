@@ -22,7 +22,7 @@ def Diminuir(valor, porcentagem = 10, formato=False):
     :param formato: Diz a função se deve retornar um valor formatado para moeda
     :return: Retorna o valor inicial - o valor percentual calculado
     """
-    total = valor + (valor / 100 * porcentagem)
+    total = valor - (valor / 100 * porcentagem)
 
     if formato:
         return f"{total:.2f}".replace('.', ',')
